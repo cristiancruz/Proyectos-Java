@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ 
+ <hibernate-mapping package="mx.itson.servisoft.entidades">
+ 	
+ 	<class name="Proyecto" table="proyecto">
+ 	
+ 	<id name="id" type="int" column="id">
+			<generator class="native"/>
+	</id>
+	
+	<property name="nombreProyecto" column = "nombreProyecto" type = "string" />
+	<property name="tipoPrograma" column ="tipoPrograma" type="string"/>
+	<property name="sector" column = "sector" type = "string" />
+	<property name="giro" column ="giro" type="string"/>
+	<property name="empresa" column = "empresa" type = "string" />
+	<property name="telefono" column = "telefono" type = "string" />
+	<property name="contactoEmpresa" column = "contactoEmpresa" type = "string" />
+	
+	
+	</class>
+</hibernate-mapping>	

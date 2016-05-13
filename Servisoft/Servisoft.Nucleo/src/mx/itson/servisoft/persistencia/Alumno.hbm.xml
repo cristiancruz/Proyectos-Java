@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ 
+ <hibernate-mapping package="mx.itson.servisoft.entidades">
+
+ 	<class name="Alumno" table="alumno">
+ 	
+ 	<id name="id" type="int" column="id">
+			<generator class="native"/>
+	</id>
+	
+	<property name="nombre" column = "nombre" type = "string" />
+	<property name="apellido" column ="apellido" type="string"/>
+	<property name="matricula" column = "matricula" type = "string" />
+	<property name="carrera" column ="carrera" type="string"/>
+	<property name="semestre" column = "semestre" type = "string" />
+	<property name="email" column ="email" type="string"/>
+	<property name="plan" column ="plan" type="string"/>
+	<property name="campus" column = "campus" type = "string" />
+	<property name="telefono" column ="telefono" type="string"/>
+	<property name="horas" column = "horas" type = "int" />
+	<property name="papelera" column = "papelera" type = "boolean" />
+	<property name="fecha" column ="fecha" type="string"/>
+	
+	
+	</class>
+</hibernate-mapping>	

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ 
+ <hibernate-mapping package="mx.itson.servisoft.entidades">
+
+ 	<class name="Usuario" table="usuario">
+ 	
+ 	<id name="id" type="int" column="id">
+			<generator class="native"/>
+	</id>
+	
+	<property name="usuario" column = "usuario" type = "string" />
+	<property name="pass" column ="pass" type="string"/>
+	<property name="tipoUsuario" column = "tipoUsuario" type = "string" />
+	
+	
+	
+	</class>
+</hibernate-mapping>	

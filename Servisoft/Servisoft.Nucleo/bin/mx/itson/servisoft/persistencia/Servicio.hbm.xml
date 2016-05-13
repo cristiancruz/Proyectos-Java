@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ 
+ <hibernate-mapping package="mx.itson.servisoft.entidades">
+ 	
+ 	<class name="Servicio" table="servicio">
+ 	
+ 	<id name="id" type="int" column="id">
+			<generator class="native" />
+	</id>
+	
+	<property name="semestreRealizacion" column ="semestreRealizacion" type="string" />
+	<property name="duracion" column ="duracion" type="string" />
+	<property name="horario" column ="horario" type="string" />
+	<property name="totalHoras" column ="totalHoras" type="int" />
+	<property name="status" column ="status" type="boolean" />
+	
+	<many-to-one name = "alumno" class = "mx.itson.servisoft.entidades.Alumno" 
+	column = "idAlumno" cascade = "all" not-null = "true" lazy = "false" />
+	
+	<many-to-one name="proyecto" class = "mx.itson.servisoft.entidades.Proyecto"
+	column = "idProyecto" cascade = "all" not-null = "true" lazy = "false" />
+	
+	</class>
+</hibernate-mapping>	
