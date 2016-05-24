@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ <hibernate-mapping package="mx.itson.rabiosa.entidades">
+ 	
+ 	<class name="Configuracion" table="configuracion">
+ 	
+ 	<id name="id" type="int" column="id">
+			<generator class="native"/>
+	</id>
+	
+	<property name="iva" column = "iva" type = "double" />
+	<property name="dap" column ="dap" type="double"/>
+	<property name="precioKwHora" column = "precio_kw_hora" type = "double" />
+	
+	</class>
+</hibernate-mapping>

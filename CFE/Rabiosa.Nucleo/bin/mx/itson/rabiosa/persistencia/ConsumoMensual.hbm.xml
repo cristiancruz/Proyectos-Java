@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ <hibernate-mapping package="mx.itson.rabiosa.entidades">
+ 	
+ 	<class name="ConsumoMensual" table="consumo_mensual">
+ 	
+ 	<id name="id" type="int" column="id">
+			<generator class="native"/>
+	</id>
+	<property name="idCliente" column = "idCliente" type = "int" />
+	<property name="nombreCliente" column ="nombreCliente" type="string"/>
+	<property name="kilowatts" column = "kilowatts" type = "double" />
+	<property name="mes" column ="mes" type="int" />
+    <property name="año" column ="año" type="int" />
+    <property name="adeudo" column = "adeudo" type = "double" />
+	<property name="subtotal" column = "subtotal" type = "double" />
+	<property name="total" column = "total" type = "double" />
+	
+	
+	</class>
+</hibernate-mapping>

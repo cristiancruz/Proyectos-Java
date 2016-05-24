@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ 
+ <hibernate-mapping package="mx.itson.rabiosa.entidades">
+ 	
+ 	<class name="Cliente" table="cliente">
+ 	
+ 	<id name="id" type="int" column="id">
+			<generator class="native"/>
+	</id>
+	
+	<property name="nombre" column = "nombre" type = "string" />
+	<property name="apellido" column ="apellido" type="string"/>
+	<property name="direccion" column = "direccion" type = "string" />
+	<property name="telefono" column = "telefono" type = "string" />
+	<property name="cp" column = "cp" type = "string" />
+	<property name="numeroContrato" column = "numero_contrato" type = "int" />
+	<property name="numeroMedidor" column = "numero_medidor" type = "int"></property>
+	
+	</class>
+</hibernate-mapping>
